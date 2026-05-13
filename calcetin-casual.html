@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calcetín Casual</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.product{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.product img{
+    width:100%;
+    border-radius:15px;
+}
+
+.info h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:34px;
+    color:#5b7cff;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.description{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.features{
+    margin-bottom:30px;
+}
+
+.features li{
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    background:#00c896;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#009f77;
+}
+
+.back{
+    display:inline-block;
+    margin-top:20px;
+    color:#555;
+    text-decoration:none;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+    .product{
+        grid-template-columns:1fr;
+    }
+
+    .info h1{
+        font-size:32px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Calcetines Antiderrapantes TP</h2>
+</header>
+
+<div class="container">
+
+    <div class="product">
+
+        <div>
+            <img src="img/ANTI.jpg">
+        </div>
+
+        <div class="info">
+
+            <h1>Impresion Antiderrapante</h1>
+
+            <div class="price">
+                $8 MXN
+            </div>
+
+            <p class="description">
+                Calcetines casuales antiderrapantes con diseño moderno
+                y máxima comodidad para uso diario.
+                Perfectos para casa, oficina o salir con estilo.
+            </p>
+
+            <ul class="features">
+                <li>✔ Diseño moderno</li>
+                <li>✔ Suela antiderrapante</li>
+                <li>✔ Tela suave y fresca</li>
+                <li>✔ Excelente ajuste</li>
+                <li>✔ Ideal para uso diario</li>
+            </ul>
+
+            <a class="btn"
+            href="https://wa.me/5213122440520?text=Hola,%20quiero%20preguntar%20por%20el%20antiderrapante"
+            target="_blank">
+
+                Comprar por WhatsApp
+
+            </a>
+
+            <br>
+
+            <a class="back" href="index.html">
+                ← Volver
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 GripSocks MX
+</footer>
+
+</body>
+</html>

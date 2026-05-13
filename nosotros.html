@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nosotros</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#0206ff;
+    color:white;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    height:60px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00c896;
+}
+
+.nosotros{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.nosotros img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.texto h1{
+    font-size:48px;
+    margin-bottom:25px;
+}
+
+.texto p{
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:20px;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+
+    background:#00c896;
+    color:white;
+
+    padding:15px 30px;
+
+    text-decoration:none;
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#009f77;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+    .nosotros{
+        grid-template-columns:1fr;
+    }
+
+    .texto h1{
+        font-size:36px;
+    }
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    
+
+    <nav>
+        <a href="index.html#productos">Productos</a>
+        <a href="index.html#contacto">Contacto</a>
+    </nav>
+
+</header>
+
+<section class="nosotros">
+
+    <div>
+        <img src="img/LOGO_HEAD.png">
+    </div>
+
+    <div class="texto">
+
+        <h1>Sobre Nosotros</h1>
+
+        <p>
+            En GripSocks MX nos especializamos en calcetines
+            antiderrapantes diseñados para brindar comodidad,
+            seguridad y estilo.
+        </p>
+
+        <p>
+            Nuestro objetivo es ofrecer productos de alta calidad
+            para toda la familia, ideales para deporte, hogar
+            y uso diario.
+        </p>
+
+        <p>
+            Trabajamos constantemente para ofrecer diseños modernos,
+            materiales cómodos y excelente atención al cliente.
+        </p>
+
+        <a class="btn" href="index.html">
+            Volver al inicio
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Calcetines Antiderrapantes TP
+</footer>
+
+</body>
+</html>

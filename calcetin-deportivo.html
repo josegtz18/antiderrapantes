@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calcetín Deportivo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.product{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.product img{
+    width:100%;
+    border-radius:15px;
+}
+
+.info h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:34px;
+    color:#00a878;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.description{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.features{
+    margin-bottom:30px;
+}
+
+.features li{
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    background:#00c896;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#009f77;
+}
+
+.back{
+    display:inline-block;
+    margin-top:20px;
+    color:#555;
+    text-decoration:none;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+    .product{
+        grid-template-columns:1fr;
+    }
+
+    .info h1{
+        font-size:32px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Calcetines Antiderrapantes TP</h2>
+</header>
+
+<div class="container">
+
+    <div class="product">
+
+        <div>
+            <img src="img/Photoroom-20240607_124339.jpg">
+        </div>
+
+        <div class="info">
+
+            <h1>Calcetín Trampoline</h1>
+
+            <div class="price">
+                $17.80 MXN
+            </div>
+
+            <p class="description">
+                Calcetines antiderrapantes, hechos para parques de trampolines o playgrounds.<br>
+                Comodos, se ajustan al pie, brindando un gran agarre y seguridad.
+                Fabricados con materiales suaves, resistentes y cómodos.
+            </p>
+
+            <ul class="features">
+                <li>✔ Antiderrapante premium</li>
+                <li>✔ Tela transpirable</li>
+                <li>✔ Ajuste cómodo</li>
+                <li>✔ Lavable</li>
+                <li>✔ Disponible en varios colores</li>
+                <li>✔ Personalizables</li>
+            </ul>
+
+            <a class="btn"
+            href="https://wa.me/5213122440520?text=Hola,%20quiero%20comprar%20el%20calcetín%20deportivo"
+            target="_blank">
+
+                Comprar por WhatsApp
+
+            </a>
+
+            <br>
+
+            <a class="back" href="index.html">
+                ← Volver
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 GripSocks MX
+</footer>
+
+</body>
+</html>
