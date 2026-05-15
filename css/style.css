@@ -26,7 +26,7 @@
         display:flex;
         justify-content:space-between;
         align-items:center;
-        border-bottom:3px solid white;
+        border-bottom:7px solid rgb(25, 0, 255);
     }
 
     .brand{
@@ -36,7 +36,7 @@
     }
 
     .logo{
-        height:80px;
+        height:90px;
         width:auto;
     }
 
@@ -146,12 +146,14 @@
         background:white;
         border-radius:15px;
         overflow:hidden;
+        border:5px solid #ff5a1f;
         box-shadow:0 4px 12px rgba(0,0,0,.1);
         transition:.3s;
     }
 
     .card:hover{
         transform:translateY(-5px);
+        box-shadow:0 10px 25px rgba(0,0,0,.2);
     }
 
     .card img{
