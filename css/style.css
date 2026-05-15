@@ -284,4 +284,57 @@
     .contact-container{
         grid-template-columns:1fr;
     }
+
+    header{
+
+        flex-direction:column;
+
+        padding:20px;
+
+        gap:20px;
+
+    }
+
+    nav{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:10px;
+
+    }
+
+    nav a{
+
+        margin:0;
+
+        font-size:14px;
+
+        padding:8px 14px;
+
+    }
+
+    .brand{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .brand h1{
+
+        font-size:20px;
+
+    }
+
+    .logo{
+
+    height:45px;
+
+    }
+
 }
