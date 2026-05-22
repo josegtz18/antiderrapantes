@@ -2,14 +2,14 @@
         margin:0;
         padding:0;
         box-sizing:border-box;
-        font-family:Arial, sans-serif;
+        font-family:'Inter', sans-serif;
     }
     html{
         scroll-behavior:smooth;
     }
 
     body{
-        background:#f5f5f5;
+        background:#F8FAFC;
         color:#333;
         overflow-x:hidden;
     }
@@ -20,13 +20,21 @@
     }
 
     header{
-        background:#ff6224;
-        color:rgb(255, 255, 255);
-        padding:20px 40px;
+        background:white;
+        padding:24px 60px;
         display:flex;
         justify-content:space-between;
         align-items:center;
-        border-bottom:7px solid rgb(25, 0, 255);
+
+        position:sticky;
+        top:0;
+        z-index:1000;
+
+        backdrop-filter:blur(12px);
+
+        border-bottom:1px solid rgba(0,0,0,.06);
+
+        box-shadow:0 4px 20px rgba(2,48,71,.05);
     }
 
     .brand{
