@@ -6,121 +6,41 @@
 
 <title>Calcetín Infantil</title>
 
-<style>
+<link rel="stylesheet" href="css/style.css">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#f4f4f4;
-    color:#333;
-}
-
-header{
-    background:#ff5a1f;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.product{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,.1);
-}
-
-.product img{
-    width:100%;
-    border-radius:15px;
-}
-
-.info h1{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.price{
-    font-size:34px;
-    color:#ff6b6b;
-    font-weight:bold;
-    margin-bottom:20px;
-}
-
-.description{
-    line-height:1.8;
-    margin-bottom:30px;
-}
-
-.features{
-    margin-bottom:30px;
-}
-
-.features li{
-    margin-bottom:10px;
-}
-
-.btn{
-    display:inline-block;
-    background:#00c896;
-    color:white;
-    padding:15px 30px;
-    text-decoration:none;
-    border-radius:10px;
-    font-size:18px;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#009f77;
-}
-
-.back{
-    display:inline-block;
-    margin-top:20px;
-    color:#555;
-    text-decoration:none;
-}
-
-footer{
-    background:#ff5a1f;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:50px;
-}
-
-@media(max-width:768px){
-
-    .product{
-        grid-template-columns:1fr;
-    }
-
-    .info h1{
-        font-size:32px;
-    }
-}
-
-</style>
 </head>
 
 <body>
 
 <header>
-    <h2>Calcetines Antiderrapantes TP</h2>
+
+    <div class="brand">
+
+        <img src="img/logo_TP_sin_fondo.png" class="logo">
+
+        <h1>Calcetines Antiderrapantes TP</h1>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+
+        <a href="index.html#productos">Productos</a>
+
+        <a href="nosotros.html">Nosotros</a>
+
+        <a
+            href="https://wa.me/5213122440520"
+            target="_blank"
+            class="whatsapp-btn">
+
+            WhatsApp
+
+        </a>
+
+    </nav>
+
 </header>
 
 <div class="container">
@@ -133,16 +53,20 @@ footer{
 
         <div class="info">
 
-            <h1>Calcetín YOGA</h1>
+            <h1>Calcetín Estudio</h1>
 
             <div class="price">
                 $45 MXN
             </div>
 
             <p class="description">
-                Calcetin antiderrapante diseñado para estudios de Yoga o Pilates.
-                Cómodos, suaves y con buen ajuste en el pie, para evitar resbalones.
-                Tejido mas grueso y resistente que el calcetín trampoline park, ideal para superficies lisas de estudios.
+
+                Calcetines antiderrapantes diseñados para estudios de yoga, pilates y entrenamiento funcional.
+
+                Fabricados con tejido más grueso, suave y resistente para brindar máxima comodidad, estabilidad y agarre sobre superficies lisas.
+
+                Ideales para estudios, gimnasios y marcas deportivas que buscan calidad y personalización.
+
             </p>
 
             <ul class="features">

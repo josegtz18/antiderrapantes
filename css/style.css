@@ -21,7 +21,7 @@
 
     header{
         background:#FB8500;
-        padding:24px 60px;
+        padding:16px 50px;
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -44,7 +44,7 @@
     }
 
     .logo{
-        height:90px;
+        height:65px;
         width:auto;
     }
 
@@ -109,7 +109,11 @@
         width:100%;
         height:100%;
 
-        background:rgba(0,0,0,.45);
+        background:linear-gradient(
+        to bottom,
+        rgba(2,48,71,.55),
+        rgba(2,48,71,.65)
+    );
 
         top:0;
         left:0;
@@ -118,16 +122,22 @@
     .hero-content{
         position:relative;
         z-index:2;
+        max-width:700px;
+        padding:20px;
     }
 
     .hero-content h2{
-        font-size:52px;
-        margin-bottom:20px;
+        font-size:64px;
+        line-height:1.1;
+        margin-bottom:24px;
+        font-weight:700;
     }
 
     .hero-content p{
         font-size:20px;
-        margin-bottom:30px;
+        line-height:1.7;
+        margin-bottom:32px;
+        opacity:.95;
     }
 
     .btn{
@@ -167,7 +177,7 @@
 
     .card{
         background:white;
-        border-radius:24px;
+        border-radius:15px;
         overflow:hidden;
 
         border:none;
@@ -185,8 +195,9 @@
 
     .card img{
         width:100%;
-        height:250px;
+        height:320px;
         object-fit:cover;
+        object-position:center;
     }
 
     .card-content{
@@ -475,5 +486,195 @@ nav a{
     color:#555;
 
     line-height:1.7;
+
+}
+
+.nosotros{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:120px 40px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+}
+
+.nosotros img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 40px rgba(2,48,71,.10);
+}
+
+.texto h1{
+
+    font-size:56px;
+
+    margin-bottom:30px;
+
+    color:#023047;
+
+    line-height:1.1;
+}
+
+.texto p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:24px;
+
+    color:#555;
+}
+
+@media(max-width:768px){
+
+    .nosotros{
+
+        grid-template-columns:1fr;
+
+        padding:80px 24px;
+
+        gap:50px;
+    }
+
+    .texto h1{
+
+        font-size:40px;
+    }
+
+}
+
+.container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:100px 40px;
+}
+
+.product{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:32px;
+
+    box-shadow:0 10px 40px rgba(2,48,71,.08);
+
+    align-items:center;
+}
+
+.product img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    height:500px;
+
+    object-fit:cover;
+}
+
+.info h1{
+
+    font-size:56px;
+
+    margin-bottom:24px;
+
+    color:#023047;
+
+    line-height:1.1;
+}
+
+.price{
+
+    font-size:42px;
+
+    color:#FB8500;
+
+    font-weight:700;
+
+    margin-bottom:24px;
+}
+
+.description{
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+
+    color:#555;
+}
+
+.features{
+
+    margin-bottom:40px;
+
+    padding-left:20px;
+}
+
+.features li{
+
+    margin-bottom:16px;
+
+    font-size:18px;
+
+    color:#444;
+}
+
+.back{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    color:#023047;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+    .product{
+
+        grid-template-columns:1fr;
+
+        padding:30px;
+
+        gap:40px;
+    }
+
+    .info h1{
+
+        font-size:40px;
+    }
+
+    .product img{
+
+        height:350px;
+    }
 
 }
