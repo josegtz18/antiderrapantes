@@ -249,6 +249,7 @@
         header{
             flex-direction:column;
             gap:15px;
+            
         }
     }
     .contacto{
@@ -319,9 +320,22 @@ header{
 
         flex-direction:column;
 
-        padding:20px;
+        padding:16px 20px;
 
         gap:20px;
+
+    }
+
+    .hero{
+
+        height:75vh;
+
+        padding:20px;
+}
+
+    .hero-content h2{
+
+        font-size:32px;
 
     }
 
@@ -330,6 +344,8 @@ nav{
         display:flex;
 
         flex-wrap:wrap;
+
+        width:100%;
 
         justify-content:center;
 
@@ -343,7 +359,7 @@ nav a{
 
         font-size:14px;
 
-        padding:8px 14px;
+        padding:10px 14px;
 
     }
 
