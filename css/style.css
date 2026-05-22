@@ -20,7 +20,7 @@
     }
 
     header{
-        background:white;
+        background:#FB8500;
         padding:24px 60px;
         display:flex;
         justify-content:space-between;
@@ -50,12 +50,12 @@
 
     header h1{
         font-size:28px;
-        color:#023047;
+        color:white;
         font-weight:700;
     }
 
     nav a{
-        color:#023047;
+        color:white;
         text-decoration:none;
         font-weight:600;
         padding:12px 20px;
@@ -63,15 +63,16 @@
         transition:.3s ease;
         margin-left:10px;
 
-        background:white;
+        background:rgba(255,255,255,.15);
 
-        box-shadow:0 4px 12px rgba(0,0,0,.06);
+        backdrop-filter:blur(8px);
     }
 
     nav a:hover{
-        background:#8ECAE6;
-        color:#023047;
+        background:white;
+        color:#FB8500;
     }
+    
 
     .hero{
         position:relative;
