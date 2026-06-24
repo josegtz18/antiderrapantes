@@ -302,6 +302,234 @@ nav a:hover{
     font-weight:700;
 }
 
+.card-actions{
+    display:flex;
+    gap:10px;
+}
+
+.card-actions .btn{
+    flex:1;
+    text-align:center;
+    padding:11px 12px;
+    font-size:13px;
+    background:#023047;
+}
+
+.card-actions .btn:hover{
+    background:#034a6e;
+    box-shadow:0 8px 24px rgba(2,48,71,.25);
+}
+
+.btn-wa{
+    flex:1;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    background:#25D366;
+    color:white;
+    padding:11px 12px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:700;
+    transition:.25s ease;
+}
+
+.btn-wa:hover{
+    background:#1ebc59;
+    transform:translateY(-3px);
+    box-shadow:0 8px 24px rgba(37,211,102,.35);
+}
+
+/* ── TRUSTED BY ── */
+.trusted{
+    padding:40px 60px;
+    background:#F0F4F8;
+    text-align:center;
+}
+
+.trusted-label{
+    font-size:13px;
+    font-weight:600;
+    color:#888;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:24px;
+}
+
+.trusted-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+    max-width:900px;
+    margin:0 auto;
+}
+
+.trusted-logo{
+    background:white;
+    border:1px solid #e0e8ef;
+    border-radius:10px;
+    padding:14px 24px;
+    font-size:14px;
+    font-weight:600;
+    color:#888;
+}
+
+/* ── HOW IT WORKS ── */
+.how-it-works{
+    padding:90px 60px;
+    background:white;
+    text-align:center;
+}
+
+.how-it-works h2{
+    font-size:38px;
+    margin-bottom:8px;
+    color:#023047;
+    font-weight:700;
+}
+
+.steps-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:28px;
+    max-width:1000px;
+    margin:48px auto 0;
+}
+
+.step-box{
+    padding:28px 20px;
+    border-radius:16px;
+    background:#F0F4F8;
+    border:1px solid #e0e8ef;
+    position:relative;
+}
+
+.step-number{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:#FB8500;
+    color:white;
+    font-weight:700;
+    font-size:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 16px;
+}
+
+.step-box h3{
+    font-size:16px;
+    font-weight:700;
+    color:#023047;
+    margin-bottom:8px;
+}
+
+.step-box p{
+    font-size:14px;
+    color:#666;
+    line-height:1.6;
+}
+
+.order-info{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    max-width:700px;
+    margin:48px auto 0;
+}
+
+.order-info-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    background:#023047;
+    color:white;
+    padding:18px 28px;
+    border-radius:14px;
+    flex:1;
+    min-width:240px;
+    text-align:left;
+}
+
+.order-info-item i{
+    font-size:24px;
+    color:#FB8500;
+}
+
+.order-info-item div{
+    display:flex;
+    flex-direction:column;
+}
+
+.order-info-label{
+    font-size:12px;
+    opacity:.75;
+    margin-bottom:2px;
+}
+
+.order-info-value{
+    font-size:15px;
+    font-weight:700;
+}
+
+/* ── TESTIMONIALS ── */
+.testimonials{
+    padding:90px 60px;
+    background:#F0F4F8;
+    text-align:center;
+}
+
+.testimonials h2{
+    font-size:38px;
+    margin-bottom:8px;
+    color:#023047;
+    font-weight:700;
+}
+
+.testimonials-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:28px;
+    max-width:1100px;
+    margin:48px auto 0;
+}
+
+.testimonial-card{
+    background:white;
+    border:1px solid #e0e8ef;
+    border-radius:16px;
+    padding:32px 26px;
+    text-align:left;
+}
+
+.quote-icon{
+    font-size:20px;
+    color:#FB8500;
+    opacity:.5;
+    margin-bottom:14px;
+    display:block;
+}
+
+.testimonial-text{
+    font-size:15px;
+    color:#444;
+    line-height:1.7;
+    margin-bottom:16px;
+    font-style:italic;
+}
+
+.testimonial-author{
+    font-size:13px;
+    font-weight:600;
+    color:#023047;
+}
+
 /* ── BENEFITS ── */
 .benefits{
     padding:90px 60px;
@@ -612,8 +840,29 @@ nav a:hover{
 
     .products,
     .benefits,
-    .contacto{
+    .contacto,
+    .trusted,
+    .how-it-works,
+    .testimonials{
         padding:60px 20px;
+    }
+
+    .card-actions{
+        flex-direction:column;
+    }
+
+    .order-info-item{
+        min-width:auto;
+        width:100%;
+    }
+
+    .trusted-grid{
+        gap:10px;
+    }
+
+    .trusted-logo{
+        padding:10px 16px;
+        font-size:12px;
     }
 
     .contact-container{
